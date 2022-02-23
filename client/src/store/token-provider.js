@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useHttpClient } from "../hooks/http-hook";
 import jwt_decode from "jwt-decode"
 import { Convert } from 'mongo-image-converter'
+import Resizer from "react-image-file-resizer"
 
 const TokenContent = React.createContext({
   token: "",
@@ -15,7 +16,7 @@ export const TokenContentProvider = (props) => {
   const { isLoading, error, sendRequest } = useHttpClient();
   const [token, setToken] = useState(null);
   const navigate = useNavigate();
-
+  const [resize, setResize] = useState("")
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -53,7 +54,9 @@ export const TokenContentProvider = (props) => {
   };
   const signup = async (data) => {
     try {
-      const convertedImage = await Convert(data.picture[0])
+      const convertedImage = await Resizer.imageFileResizer(data.picture[0], 200, 200, "JPEG", 100, 0, (uri) => {
+        setResize(uri)
+      }, "base64", 200, 200)
       const responseData = await sendRequest(
         "/auth/registration",
         "POST",
@@ -61,7 +64,7 @@ export const TokenContentProvider = (props) => {
           email: data.email,
           passwort: data.passwort,
           name: data.name,
-          image: convertedImage,
+          image: resize,
           favorites: [],
         }),
         { "Content-Type": "application/json" }
