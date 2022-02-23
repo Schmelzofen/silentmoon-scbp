@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useHttpClient } from "../components/UI/hooks/http-hook";
+import { useHttpClient } from "../hooks/http-hook";
 import jwt_decode from "jwt-decode"
 import { Convert } from 'mongo-image-converter'
 
