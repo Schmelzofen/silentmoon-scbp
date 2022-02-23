@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 3%;
+}
+
+.container button {
+    background-color: #e28f83;
+    border-radius: 100%;
+    border: none;
+    padding: 0.3rem 0.3rem;
+}
+
+.container button:active {
+    transform: scale(0.9);
+}
+
+.container button svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}

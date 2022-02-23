@@ -1,0 +1,48 @@
+.ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ul li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #a1a4b23d;
+  padding-bottom: 0.8rem;
+}
+
+.ul li:last-child {
+  margin-bottom: 5rem;
+}
+
+.ul li div:first-child {
+  margin-right: 20px;
+}
+
+.ul li div:first-child button {
+  display: grid;
+  place-items: center;
+  border-color: #a1a4b2;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.ul li div:first-child button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.ul li div h5,
+.ul li div p {
+  margin: 0;
+}
+
+.ul li div h5 {
+  margin-bottom: 0.4rem;
+}
+
+.ul li div p {
+  font-size: 0.8rem;
+}

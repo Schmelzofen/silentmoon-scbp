@@ -1,0 +1,23 @@
+.textCard {
+  margin-bottom: 4rem;
+}
+
+.textCard h2 {
+  margin-bottom: 0.3rem;
+}
+
+.textCard p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+.textCard .follow {
+  display: flex;
+  align-items: center;
+}
+
+.textCard .follow svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  color: #e28f83;
+}

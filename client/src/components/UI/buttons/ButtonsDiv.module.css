@@ -1,0 +1,16 @@
+.buttonDiv {
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonDiv button {
+  display: block;
+}
+
+.buttonDiv button:first-child,
+.buttonDiv button:last-child {
+  margin: 0 30px;
+}

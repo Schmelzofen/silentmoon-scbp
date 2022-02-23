@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.container img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 5px 5px 11px 5px #c7c7c7;
+}
+
+.container h1 {
+  margin-left: 20px;
+}
+
+.container div:last-child {
+  margin-left: auto;
+}

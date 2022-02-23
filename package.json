@@ -1,0 +1,22 @@
+{
+  "name": "silentmoon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js",
+      "build": "cd client && npm install && npm run build && cd ../server && npm install",
+      "devClient": "cd client && yarn start",
+      "devServer": "cd server && npm run dev",
+      "dev": "concurrently --kill-others-on-fail \"npm run devServer\" \"npm run devClient\"",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+      "mongodb",
+      "express",
+      "react",
+      "nodejs"
+  ],
+  "author": "",
+  "license": "ISC"
+}

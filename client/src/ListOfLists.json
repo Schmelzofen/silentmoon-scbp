@@ -1,0 +1,586 @@
+[
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3hCKWhFiEID6G0QAkPAHR2"
+    },
+    "followers": { "href": null, "total": 51484 },
+    "genres": ["sleep"],
+    "href": "https://api.spotify.com/v1/artists/3hCKWhFiEID6G0QAkPAHR2",
+    "id": "3hCKWhFiEID6G0QAkPAHR2",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebc55fe9eaff8a965ab0f3f6ef",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab67616100005174c55fe9eaff8a965ab0f3f6ef",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f178c55fe9eaff8a965ab0f3f6ef",
+        "width": 160
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 56,
+    "type": "artist",
+    "uri": "spotify:artist:3hCKWhFiEID6G0QAkPAHR2"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6ppQ1vjjme5Jtz2ceBFcWY"
+    },
+    "followers": { "href": null, "total": 86431 },
+    "genres": ["sleep"],
+    "href": "https://api.spotify.com/v1/artists/6ppQ1vjjme5Jtz2ceBFcWY",
+    "id": "6ppQ1vjjme5Jtz2ceBFcWY",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebf33aa2bdddf5206c47633bcf",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab67616100005174f33aa2bdddf5206c47633bcf",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f178f33aa2bdddf5206c47633bcf",
+        "width": 160
+      }
+    ],
+    "name": "Yoga Music",
+    "popularity": 53,
+    "type": "artist",
+    "uri": "spotify:artist:6ppQ1vjjme5Jtz2ceBFcWY"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/795LUnIdgOwmQgGJrFkQrs"
+    },
+    "followers": { "href": null, "total": 71 },
+    "genres": ["german indie rock"],
+    "href": "https://api.spotify.com/v1/artists/795LUnIdgOwmQgGJrFkQrs",
+    "id": "795LUnIdgOwmQgGJrFkQrs",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1768070dd26dfae41ff1c007",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab676161000051741768070dd26dfae41ff1c007",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f1781768070dd26dfae41ff1c007",
+        "width": 160
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 1,
+    "type": "artist",
+    "uri": "spotify:artist:795LUnIdgOwmQgGJrFkQrs"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1GPoTgvXd5OqZMF1akOsV2"
+    },
+    "followers": { "href": null, "total": 423073 },
+    "genres": ["chinese r&b", "mandopop", "taiwan pop"],
+    "href": "https://api.spotify.com/v1/artists/1GPoTgvXd5OqZMF1akOsV2",
+    "id": "1GPoTgvXd5OqZMF1akOsV2",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb928bb417977f0c469661bc2e",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab67616100005174928bb417977f0c469661bc2e",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f178928bb417977f0c469661bc2e",
+        "width": 160
+      }
+    ],
+    "name": "Yoga Lin",
+    "popularity": 58,
+    "type": "artist",
+    "uri": "spotify:artist:1GPoTgvXd5OqZMF1akOsV2"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2xATq0Rs1NRUDqK3xoJsyk"
+    },
+    "followers": { "href": null, "total": 144 },
+    "genres": ["yoga"],
+    "href": "https://api.spotify.com/v1/artists/2xATq0Rs1NRUDqK3xoJsyk",
+    "id": "2xATq0Rs1NRUDqK3xoJsyk",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273ee18617dbbcd827aecef98f2",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02ee18617dbbcd827aecef98f2",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851ee18617dbbcd827aecef98f2",
+        "width": 64
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 36,
+    "type": "artist",
+    "uri": "spotify:artist:2xATq0Rs1NRUDqK3xoJsyk"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3AgxRYe2kXEfsZyB07hqJF"
+    },
+    "followers": { "href": null, "total": 17324 },
+    "genres": ["mexican hip hop", "rap underground mexicano", "trap mexicano"],
+    "href": "https://api.spotify.com/v1/artists/3AgxRYe2kXEfsZyB07hqJF",
+    "id": "3AgxRYe2kXEfsZyB07hqJF",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8d30dc6568e30188f09566c8",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab676161000051748d30dc6568e30188f09566c8",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f1788d30dc6568e30188f09566c8",
+        "width": 160
+      }
+    ],
+    "name": "Yoga Fire",
+    "popularity": 57,
+    "type": "artist",
+    "uri": "spotify:artist:3AgxRYe2kXEfsZyB07hqJF"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0QQDNsCNapSHNsIMdKzm35"
+    },
+    "followers": { "href": null, "total": 0 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0QQDNsCNapSHNsIMdKzm35",
+    "id": "0QQDNsCNapSHNsIMdKzm35",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2735fb59bc271abf74a8547922e",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e025fb59bc271abf74a8547922e",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048515fb59bc271abf74a8547922e",
+        "width": 64
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 3,
+    "type": "artist",
+    "uri": "spotify:artist:0QQDNsCNapSHNsIMdKzm35"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/78AN2phg9cUz8scFyKFVIz"
+    },
+    "followers": { "href": null, "total": 97 },
+    "genres": ["environmental", "rain"],
+    "href": "https://api.spotify.com/v1/artists/78AN2phg9cUz8scFyKFVIz",
+    "id": "78AN2phg9cUz8scFyKFVIz",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3cedfedccb7a7d812320bd5c",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab676161000051743cedfedccb7a7d812320bd5c",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f1783cedfedccb7a7d812320bd5c",
+        "width": 160
+      }
+    ],
+    "name": "Yoga Rain",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:78AN2phg9cUz8scFyKFVIz"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/1isjL7whJKI0FmlHg73tH8"
+    },
+    "followers": { "href": null, "total": 13395 },
+    "genres": ["yoga"],
+    "href": "https://api.spotify.com/v1/artists/1isjL7whJKI0FmlHg73tH8",
+    "id": "1isjL7whJKI0FmlHg73tH8",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5f96f27c39bc1eebe0966969",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab676161000051745f96f27c39bc1eebe0966969",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f1785f96f27c39bc1eebe0966969",
+        "width": 160
+      }
+    ],
+    "name": "Mantra Yoga Music Oasis",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:1isjL7whJKI0FmlHg73tH8"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2bu7PuDQf4rcsMAurWsPqB"
+    },
+    "followers": { "href": null, "total": 20 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2bu7PuDQf4rcsMAurWsPqB",
+    "id": "2bu7PuDQf4rcsMAurWsPqB",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2734368ac61609f69c5ac8484ec",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e024368ac61609f69c5ac8484ec",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048514368ac61609f69c5ac8484ec",
+        "width": 64
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 5,
+    "type": "artist",
+    "uri": "spotify:artist:2bu7PuDQf4rcsMAurWsPqB"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3uC78ojWmi0c7NdLU7uwvY"
+    },
+    "followers": { "href": null, "total": 12749 },
+    "genres": ["yoga"],
+    "href": "https://api.spotify.com/v1/artists/3uC78ojWmi0c7NdLU7uwvY",
+    "id": "3uC78ojWmi0c7NdLU7uwvY",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb84694b72c6875fadb9ce61ae",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab6761610000517484694b72c6875fadb9ce61ae",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f17884694b72c6875fadb9ce61ae",
+        "width": 160
+      }
+    ],
+    "name": "Yoga Tribe",
+    "popularity": 43,
+    "type": "artist",
+    "uri": "spotify:artist:3uC78ojWmi0c7NdLU7uwvY"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/592HkGzc4c0Sk4NAVItIFC"
+    },
+    "followers": { "href": null, "total": 2 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/592HkGzc4c0Sk4NAVItIFC",
+    "id": "592HkGzc4c0Sk4NAVItIFC",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273f2dbf7d5af075560026cad6d",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02f2dbf7d5af075560026cad6d",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851f2dbf7d5af075560026cad6d",
+        "width": 64
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:592HkGzc4c0Sk4NAVItIFC"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6U0BX1nT0wQXNSVUiEWjW7"
+    },
+    "followers": { "href": null, "total": 8367 },
+    "genres": ["vapor trap"],
+    "href": "https://api.spotify.com/v1/artists/6U0BX1nT0wQXNSVUiEWjW7",
+    "id": "6U0BX1nT0wQXNSVUiEWjW7",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2731ee7f56b1015ea7086b83242",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e021ee7f56b1015ea7086b83242",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048511ee7f56b1015ea7086b83242",
+        "width": 64
+      }
+    ],
+    "name": "Yoga Flame",
+    "popularity": 37,
+    "type": "artist",
+    "uri": "spotify:artist:6U0BX1nT0wQXNSVUiEWjW7"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6r0Pc4WLSGKWqd3UvjeKyC"
+    },
+    "followers": { "href": null, "total": 4 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/6r0Pc4WLSGKWqd3UvjeKyC",
+    "id": "6r0Pc4WLSGKWqd3UvjeKyC",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273c5b3fdf81bf3d8b3f31d8b81",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02c5b3fdf81bf3d8b3f31d8b81",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851c5b3fdf81bf3d8b3f31d8b81",
+        "width": 64
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:6r0Pc4WLSGKWqd3UvjeKyC"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/6RVXIMP9f30jw4rBAn9RfW"
+    },
+    "followers": { "href": null, "total": 18569 },
+    "genres": ["sleep"],
+    "href": "https://api.spotify.com/v1/artists/6RVXIMP9f30jw4rBAn9RfW",
+    "id": "6RVXIMP9f30jw4rBAn9RfW",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273d005e8752165ab1def624e70",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02d005e8752165ab1def624e70",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851d005e8752165ab1def624e70",
+        "width": 64
+      }
+    ],
+    "name": "Yoga Workout Music",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:6RVXIMP9f30jw4rBAn9RfW"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4XPPQyscw9EPv0qc3vz5Qc"
+    },
+    "followers": { "href": null, "total": 144 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4XPPQyscw9EPv0qc3vz5Qc",
+    "id": "4XPPQyscw9EPv0qc3vz5Qc",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273bf8a98c1281e0063ae7c4c20",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02bf8a98c1281e0063ae7c4c20",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851bf8a98c1281e0063ae7c4c20",
+        "width": 64
+      }
+    ],
+    "name": "Spiritual Yoga",
+    "popularity": 41,
+    "type": "artist",
+    "uri": "spotify:artist:4XPPQyscw9EPv0qc3vz5Qc"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0tUcpMa6Dm0GNhMGr6DarW"
+    },
+    "followers": { "href": null, "total": 1 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/0tUcpMa6Dm0GNhMGr6DarW",
+    "id": "0tUcpMa6Dm0GNhMGr6DarW",
+    "images": [],
+    "name": "Yoga",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:0tUcpMa6Dm0GNhMGr6DarW"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2qRi43QEYb8xDVrlUAx7nb"
+    },
+    "followers": { "href": null, "total": 36 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/2qRi43QEYb8xDVrlUAx7nb",
+    "id": "2qRi43QEYb8xDVrlUAx7nb",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2730350922bc26118eba5d3d1c5",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e020350922bc26118eba5d3d1c5",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048510350922bc26118eba5d3d1c5",
+        "width": 64
+      }
+    ],
+    "name": "Yoga Acoustic Project",
+    "popularity": 32,
+    "type": "artist",
+    "uri": "spotify:artist:2qRi43QEYb8xDVrlUAx7nb"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/2AXNDqT86nQcoDCRrjFPGI"
+    },
+    "followers": { "href": null, "total": 63451 },
+    "genres": ["sleep"],
+    "href": "https://api.spotify.com/v1/artists/2AXNDqT86nQcoDCRrjFPGI",
+    "id": "2AXNDqT86nQcoDCRrjFPGI",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1a68a44368a06b891054882a",
+        "width": 640
+      },
+      {
+        "height": 320,
+        "url": "https://i.scdn.co/image/ab676161000051741a68a44368a06b891054882a",
+        "width": 320
+      },
+      {
+        "height": 160,
+        "url": "https://i.scdn.co/image/ab6761610000f1781a68a44368a06b891054882a",
+        "width": 160
+      }
+    ],
+    "name": "Kundalini: Yoga, Meditation, Relaxation",
+    "popularity": 44,
+    "type": "artist",
+    "uri": "spotify:artist:2AXNDqT86nQcoDCRrjFPGI"
+  },
+  {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/4d1PebyU8dfud7bYr7BcEK"
+    },
+    "followers": { "href": null, "total": 3 },
+    "genres": [],
+    "href": "https://api.spotify.com/v1/artists/4d1PebyU8dfud7bYr7BcEK",
+    "id": "4d1PebyU8dfud7bYr7BcEK",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273a32aa4ce709960808bf26940",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e02a32aa4ce709960808bf26940",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d00004851a32aa4ce709960808bf26940",
+        "width": 64
+      }
+    ],
+    "name": "Yoga",
+    "popularity": 0,
+    "type": "artist",
+    "uri": "spotify:artist:4d1PebyU8dfud7bYr7BcEK"
+  }
+]

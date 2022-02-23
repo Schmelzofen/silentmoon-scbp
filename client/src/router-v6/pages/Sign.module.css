@@ -1,0 +1,19 @@
+.container h1 {
+  text-align: center;
+  margin-top: 40%;
+}
+
+.container .small {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .small p {
+  margin: 0;
+}
+
+.container .small a {
+  margin-left: 10px;
+}
