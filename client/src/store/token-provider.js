@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useHttpClient } from "../hooks/http-hook";
+import { useHttpClient } from "../components/UI/hooks/http-hook";
 import jwt_decode from "jwt-decode"
 import { Convert } from 'mongo-image-converter'
 
@@ -27,7 +27,7 @@ export const TokenContentProvider = (props) => {
   const login = async (data) => {
     try {
       const responseData = await sendRequest(
-        "http://localhost:3000/auth/login",
+        "/auth/login",
         "POST",
         JSON.stringify({
           email: data.email,
@@ -55,7 +55,7 @@ export const TokenContentProvider = (props) => {
     try {
       const convertedImage = await Convert(data.picture[0])
       const responseData = await sendRequest(
-        "https://silentmoonproject.herokuapp.com/auth/registration",
+        "/auth/registration",
         "POST",
         JSON.stringify({
           email: data.email,
