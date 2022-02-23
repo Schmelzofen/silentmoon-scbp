@@ -1,26 +1,27 @@
+import TokenContent from "../../../store/token-provider";
+import { useContext } from "react"
+import classes from "./ProfileContent.module.css"
 
 const ProfileContent = () => {
-    return (
-      <>
-        
-        <div class="content">
+  const authCtx = useContext(TokenContent);
+  console.log(authCtx)
+  return (
+    <>
+
+      <div className={classes.content}>
         <h1>Your personal data</h1>
         <ul>
-          <li>Pre-name: Ronald</li>
-          <li>Last-name: McDonald</li>
-          <li>email: ronald@mcdonald.com</li>
-  
+          <li>Name: {authCtx.token.findUser.name}</li>
+          <li>Your Mail: {authCtx.token.findUser.email}</li>
+          <li>Subscription: <span>FREE</span></li>
         </ul>
-        </div>
-        <form>
-          <label for="oldpw">Current password:  </label>
-          <input type="text id="oldpw></input><br/>
-          <label for="newpw">New password:  </label>
-          <input type="text id="newpw></input>
-        </form>
-        <button>Change Password</button>
-      </>
-    );
-  };
+      </div>
+      <div className={classes.container}>
+        <button>change Password</button>
+        <button>change Mail</button>
+      </div>
+    </>
+  );
+};
 
 export default ProfileContent;

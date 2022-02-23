@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+}
+
+.container > button {
+    background: #e28f83;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1.5% 2%;
+    margin-left: 5px;
+}
+
+.content ul {
+    list-style-type: none;
+    margin-left: -25px;
+}
+
+.content ul li {
+    margin-bottom: 5px;
+}

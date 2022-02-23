@@ -16,7 +16,7 @@ export const TokenContentProvider = (props) => {
   const { isLoading, error, sendRequest } = useHttpClient();
   const [token, setToken] = useState(null);
   const navigate = useNavigate();
-  const [resize, setResize] = useState("")
+
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -53,30 +53,54 @@ export const TokenContentProvider = (props) => {
     navigate("/")
   };
   const signup = async (data) => {
-    try {
-      const convertedImage = await Resizer.imageFileResizer(data.picture[0], 200, 200, "JPEG", 100, 0, (uri) => {
-        setResize(uri)
-      }, "base64", 200, 200)
-      const responseData = await sendRequest(
-        "/auth/registration",
-        "POST",
-        JSON.stringify({
-          email: data.email,
-          passwort: data.passwort,
-          name: data.name,
-          image: resize,
-          favorites: [],
-        }),
-        { "Content-Type": "application/json" }
-      );
-      if (responseData && responseData.accessToken && !error) {
-        const encodedToken = jwt_decode(responseData.accessToken)
-        setToken(encodedToken);
-        localStorage.setItem("token", JSON.stringify(encodedToken))
-        navigate("/welcome");
+    if (data.picture) {
+      try {
+        const resized = Resizer.imageFileResizer(data.picture[0], 200, 200, "JPEG", 100, 0, async (uri) => {
+          const responseData = await sendRequest(
+            "/auth/registration",
+            "POST",
+            JSON.stringify({
+              email: data.email,
+              passwort: data.passwort,
+              name: data.name,
+              image: uri,
+              favorites: [],
+            }),
+            { "Content-Type": "application/json" }
+          );
+          if (responseData && responseData.accessToken && !error) {
+            const encodedToken = jwt_decode(responseData.accessToken)
+            setToken(encodedToken);
+            localStorage.setItem("token", JSON.stringify(encodedToken))
+            navigate("/welcome");
+          }
+        }, "base64", 200, 200)
+      } catch (e) {
+        console.log(e)
       }
-    } catch (e) {
-      console.log(e)
+    } else {
+      try {
+        const responseData = await sendRequest(
+          "/auth/registration",
+          "POST",
+          JSON.stringify({
+            email: data.email,
+            passwort: data.passwort,
+            name: data.name,
+            image: "",
+            favorites: [],
+          }),
+          { "Content-Type": "application/json" }
+        );
+        if (responseData && responseData.accessToken && !error) {
+          const encodedToken = jwt_decode(responseData.accessToken)
+          setToken(encodedToken);
+          localStorage.setItem("token", JSON.stringify(encodedToken))
+          navigate("/welcome");
+        }
+      } catch (e) {
+        console.log(e)
+      }
     }
   };
 

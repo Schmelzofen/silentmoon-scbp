@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import TokenContent from "../../../store/token-provider";
 import classes from "./LoginForm.module.css";
+import Resizer from "react-image-file-resizer"
 
 const SignupForm = () => {
   const authCtx = useContext(TokenContent);
