@@ -21,11 +21,11 @@ Because Spotify itself requires a login, the Spotify data is not freely accessib
 ### Some screenshots of the app's user interface
 
 <div align="center">
-    <img src="./screenshots/login.jpg" width="220" />
-    <img src="./screenshots/signUp.jpg" width="220" />
-    <img src="./screenshots/reminders.jpg" width="220" />
-    <img src="./screenshots/home.jpg" width="220" />
-    <img src="./screenshots/meditationDetails.jpg" width="220" />
+    <img src="./screenshots/login.jpeg" width="220" />
+    <img src="./screenshots/signUp.jpeg" width="220" />
+    <img src="./screenshots/reminders.jpeg" width="220" />
+    <img src="./screenshots/home.jpeg" width="220" />
+    <img src="./screenshots/meditationDetails.jpeg" width="220" />
 </div>
 
 
