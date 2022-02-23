@@ -6,7 +6,7 @@ import { GiMeditation } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
-import { BiTime } from "react-icons/bi"
+
 import classes from "./Footer.module.css";
 
 const Footer = () => {
@@ -30,8 +30,8 @@ const Footer = () => {
             className={(navData) => (navData.isActive ? classes.active : "")}
           >
             <div className={classes.iconT}>
-              <BiTime />
-              <SmallTag text={"Meditate"} />
+              <MdFavoriteBorder />
+              <SmallTag text={"Favorites"} />
             </div>
           </NavLink>
         </li>
