@@ -1,5 +1,5 @@
 const { getPlaylistByMood, getPlaylistById, getPlaylistMeditation, getPlaylistYoga, spotifyTokenController } = require("../controller/spotifyController")
-const { registrationController, loginController, loginRequired } = require("../controller/authController")
+const { registrationController, loginController, loginRequired, changeUserDetailsController } = require("../controller/authController")
 const { fileController } = require("../controller/fileController")
 const { addFavoritesController, getFavoritesController } = require("../controller/favoritesController")
 const { getUser } = require("../db/DAO")
@@ -40,6 +40,9 @@ const routes = (app) => {
     // Spotify Token
     app.route("/auth/spotify/:id")
         .post(spotifyTokenController)
+    // change User Details
+    app.route("/auth/profile")
+        .post(changeUserDetailsController)
 }
 
 

@@ -5,6 +5,7 @@ const validator = require("email-validator")
 const jwt = require("jsonwebtoken")
 const salt = process.env.salt
 var SpotifyWebApi = require('spotify-web-api-node')
+const ObjectId = require("mongodb").ObjectId
 
 const credentials = {
     clientId: process.env.CID,
@@ -69,6 +70,29 @@ async function loginController(req, res) {
     }
 }
 
+async function changeUserDetailsController(req, res) {
+    const db = await connect()
+    if (req.body.passwort) {
+        const hashPassword = crypto.pbkdf2Sync(req.body.passwort, salt, 1000, 64, "sha512").toString("hex")
+        const getUser = await db.collection("silentmoon").updateOne({ _id: ObjectId(req.body._id) }, { $set: { passwort: hashPassword } })
+            .then(() => {
+                return res.status(200).send({ "Success": "Password has been changed" })
+            })
+            .catch((err) => {
+                return res.status(500).send({ "Error": err })
+            })
+    }
+    if (req.body.email) {
+        const getUser = await db.collection("silentmoon").updateOne({ _id: ObjectId(req.body._id) }, { $set: { email: req.body.email } })
+            .then(() => {
+                return res.status(200).send({ "Success": "Email has been changed" })
+            })
+            .catch((err) => {
+                return res.status(500).send({ "Error": err })
+            })
+    }
+}
+
 const loginRequired = (req, res, next) => {
     if (req.user) {
         next();
@@ -80,5 +104,6 @@ const loginRequired = (req, res, next) => {
 module.exports = {
     registrationController,
     loginController,
-    loginRequired
+    loginRequired,
+    changeUserDetailsController
 }

@@ -2,15 +2,70 @@ import TokenContent from "../../../store/token-provider";
 import { useContext, useState } from "react"
 import classes from "./ProfileContent.module.css"
 import { Link } from "react-router-dom"
+import { useHttpClient } from "../../../hooks/http-hook";
+import { useNavigate } from "react-router-dom";
 
 const ProfileContent = () => {
   const authCtx = useContext(TokenContent);
   const [isCollapsed, setIsCollapsed] = useState(false)
   const [istGeschlossen, setzeIstGeschlossen] = useState(false)
+  const { isLoading, error, sendRequest } = useHttpClient();
+  const [mail, setMail] = useState("")
+  const [password, setPassword] = useState("")
+  const navigate = useNavigate();
+
+
+  const triggerPasswordChange = () => {
+    const changeDetails = async () => {
+      try {
+        const responseData = await sendRequest(
+          "http://localhost:3000/auth/profile",
+          "POST",
+          JSON.stringify({
+            _id: authCtx.token.findUser._id,
+            passwort: password,
+          }),
+          { "Content-Type": "application/json" }
+        );
+        if (responseData && !error) {
+          setIsCollapsed(!isCollapsed)
+        }
+      } catch (e) {
+        console.log(e)
+      }
+    };
+    changeDetails()
+  }
+  const triggerEmailChange = () => {
+    const changeDetails = async () => {
+      try {
+        const responseData = await sendRequest(
+          "http://localhost:3000/auth/profile",
+          "POST",
+          JSON.stringify({
+            _id: authCtx.token.findUser._id,
+            email: mail,
+          }),
+          { "Content-Type": "application/json" }
+        );
+        if (responseData && !error) {
+          console.log(responseData)
+          let oldmail = JSON.parse(localStorage.token)
+          oldmail.findUser.email = mail
+          localStorage.setItem("token", JSON.stringify(oldmail))
+          console.log(JSON.stringify(localStorage))
+          setIsCollapsed(!istGeschlossen)
+          navigate("/profile")
+        }
+      } catch (e) {
+        console.log(e)
+      }
+    };
+    changeDetails()
+  }
 
   return (
     <>
-
       <div className={classes.content}>
         <p>Your Mail: </p><span>{authCtx.token.findUser.email}</span>
       </div>
@@ -22,16 +77,16 @@ const ProfileContent = () => {
         <button onClick={() => setzeIstGeschlossen(!istGeschlossen)}>change mail</button>
         {isCollapsed ?
           <div className={classes.inputContainer}>
-            <input type="password" name="oldpw" placeholder="old password" />
-            <input type="password" name="newpw" placeholder="new password" />
-            <button>save</button>
+            <input type="password" name="oldpw" readOnly placeholder="old password" value={authCtx.token.findUser.passwort} />
+            <input type="password" name="newpw" placeholder="new password" onChange={(e) => setPassword(e.target.value)} />
+            <button onClick={triggerPasswordChange}>save</button>
           </div> :
           null}
         {istGeschlossen ?
           <div className={classes.inputContainer}>
-            <input type="text" name="oldmail" placeholder="Your old email" />
-            <input type="text" name="newmail" placeholder="Your new email" />
-            <button>save</button>
+            <input type="text" name="oldmail" readOnly placeholder="Your old email" value={authCtx.token.findUser.email} />
+            <input type="text" name="newmail" placeholder="Your new email" onChange={(e) => setMail(e.target.value)} />
+            <button onClick={triggerEmailChange}>save</button>
           </div> :
           null}
       </div>
