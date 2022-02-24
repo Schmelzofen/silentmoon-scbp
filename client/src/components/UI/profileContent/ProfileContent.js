@@ -84,8 +84,8 @@ const ProfileContent = () => {
           null}
         {istGeschlossen ?
           <div className={classes.inputContainer}>
-            <input type="text" name="oldmail" readOnly placeholder="Your old email" value={authCtx.token.findUser.email} />
-            <input type="text" name="newmail" placeholder="Your new email" onChange={(e) => setMail(e.target.value)} />
+            <input type="text" name="oldmail" readOnly value={authCtx.token.findUser.email} />
+            <input type="text" name="newmail" placeholder="enter new email" onChange={(e) => setMail(e.target.value)} />
             <button onClick={triggerEmailChange}>save</button>
           </div> :
           null}
