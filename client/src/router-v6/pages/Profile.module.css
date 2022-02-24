@@ -27,3 +27,7 @@
 .meditate h1 {
     font-size: 3vh;
 }
+
+.timePicker {
+    padding: 0 0 10% 0;
+}
