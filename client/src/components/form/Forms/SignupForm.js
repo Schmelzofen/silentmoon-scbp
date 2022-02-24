@@ -53,20 +53,14 @@ const SignupForm = () => {
         {errors.passwort?.message && (
           <p className={classes.error}>{errors.passwort?.message}</p>
         )}
-        {file ?
-          <label class="btn btn-default btn-sm center-block btn-file">
-            Picture has been uploaded!
-          </label>
-          :
-          <label class="btn btn-default btn-sm center-block btn-file">
-            <p><i class="fa fa-upload fa-2x" aria-hidden="true"></i> choose a picture</p>
-            <input
+        <label className="btn btn-default btn-sm center-block btn-file">
+          <p><i className="fa fa-upload fa-2x" aria-hidden="true">{file ? <span className={classes.upload}>{file}</span> : <span className={classes.upload}>Upload a picture!</span>}</i></p>
+          <input
                 /*ref={register}*/ {...register("picture")}
-              type="file" /*name="picture"*/
-              onChange={() => setFile(!file)}
-            />
-          </label>
-        }
+            type="file" /*name="picture"*/
+            onChange={(e) => setFile(e.target.files[0].name)}
+          />
+        </label>
         <input type="submit" value="SEND" />
       </form>
     </>
