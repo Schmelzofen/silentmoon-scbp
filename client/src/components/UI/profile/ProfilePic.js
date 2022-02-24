@@ -5,7 +5,6 @@ import LogoutButton from "./LogoutButton/LogoutButton";
 
 const ProfilePic = (props) => {
   const tokenCtx = useContext(TokenContent);
-  console.log(tokenCtx)
   return (
     <div className={classes.container}>
       <div>
@@ -18,9 +17,6 @@ const ProfilePic = (props) => {
       <LogoutButton />
     </div>
   );
-  <div>
-    <h1>Test</h1>
-  </div>
 };
 
 

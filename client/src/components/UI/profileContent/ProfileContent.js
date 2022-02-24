@@ -12,10 +12,10 @@ const ProfileContent = () => {
     <>
 
       <div className={classes.content}>
-        <ul>
-          <li>Your Mail: {authCtx.token.findUser.email}</li>
-          <li>Subscription: <Link className={classes.link} to="/premium"><span className={classes.subscription}>FREE</span></Link></li>
-        </ul>
+        <p>Your Mail: </p><span>{authCtx.token.findUser.email}</span>
+      </div>
+      <div className={classes.content}>
+        <p>Subscription:</p><Link className={classes.link} to="/premium"><span className={classes.subscription}>FREE</span></Link>
       </div>
       <div className={classes.container}>
         <button onClick={() => setIsCollapsed(!isCollapsed)}>change password</button>

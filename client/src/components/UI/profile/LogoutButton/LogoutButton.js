@@ -5,7 +5,7 @@ import classes from "./LogoutButton.module.css";
 
 const LogoutButton = () => {
   const tkCtx = useContext(TokenContent);
-  console.log(tkCtx)
+  
   return (
     <div className={classes.container}>
       <button

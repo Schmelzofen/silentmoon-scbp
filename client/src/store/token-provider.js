@@ -4,6 +4,7 @@ import { useHttpClient } from "../hooks/http-hook";
 import jwt_decode from "jwt-decode"
 import { Convert } from 'mongo-image-converter'
 import Resizer from "react-image-file-resizer"
+import placeholder from "../icons/placeholder.png"
 
 const TokenContent = React.createContext({
   token: "",
@@ -53,11 +54,11 @@ export const TokenContentProvider = (props) => {
     navigate("/")
   };
   const signup = async (data) => {
-    if (data.picture) {
+    if (data.picture.length === 1) {
       try {
         const resized = Resizer.imageFileResizer(data.picture[0], 200, 200, "JPEG", 100, 0, async (uri) => {
           const responseData = await sendRequest(
-            "/auth/registration",
+            "http://localhost:3000/auth/registration",
             "POST",
             JSON.stringify({
               email: data.email,
@@ -78,16 +79,16 @@ export const TokenContentProvider = (props) => {
       } catch (e) {
         console.log(e)
       }
-    } else {
+    } else if (data.picture.length === 0) {
       try {
         const responseData = await sendRequest(
-          "/auth/registration",
+          "http://localhost:3000/auth/registration",
           "POST",
           JSON.stringify({
             email: data.email,
             passwort: data.passwort,
             name: data.name,
-            image: "",
+            image: placeholder,
             favorites: [],
           }),
           { "Content-Type": "application/json" }

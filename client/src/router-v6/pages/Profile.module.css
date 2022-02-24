@@ -17,5 +17,13 @@
     background: white;
     color: #e28f83;
     border: 1px solid #e28f83;
-    transform: scale(.9)
+    transform: scale(0.9);
+}
+
+.meditate {
+    margin: 0 6% 0;
+}
+
+.meditate h1 {
+    font-size: 3vh;
 }

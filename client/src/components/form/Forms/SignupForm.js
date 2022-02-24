@@ -2,11 +2,9 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import TokenContent from "../../../store/token-provider";
 import classes from "./LoginForm.module.css";
-import Resizer from "react-image-file-resizer"
 
 const SignupForm = () => {
   const authCtx = useContext(TokenContent);
-  //   console.log(authCtx);
 
   const {
     register,
@@ -21,7 +19,7 @@ const SignupForm = () => {
       <form
         onSubmit={handleSubmit((data) => {
           console.log(data.picture);
-          console.log(data.picture[0].file)
+          console.log(data.picture.length)
           authCtx.signup(data);
           //   if(errors.)
         })}
@@ -59,9 +57,6 @@ const SignupForm = () => {
           /*ref={register}*/ {...register("picture")}
           type="file" /*name="picture"*/
         />
-        {errors.file?.message && (
-          <p className={classes.error}>{errors.file?.message}</p>
-        )}
         <input type="submit" value="SEND" />
       </form>
     </>
