@@ -31,8 +31,8 @@ export const MusicContentProvider = (props) => {
     const { isLoading, error, sendRequest } = useHttpClient();
     const tokenCtx = useContext(TokenContent);
 
-    const client_id = window.env.CLIENT_ID; // Your client id
-    const client_secret = window.env.CS; // Your secret
+    const client_id = window.env.CLIENT_ID || ""; // Your client id
+    const client_secret = window.env.CS || ""; // Your secret
     const auth_token = Buffer.from(`${client_id}:${client_secret}`, 'utf-8').toString('base64');
 
 
