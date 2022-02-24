@@ -35,7 +35,6 @@ export const MusicContentProvider = (props) => {
     const client_id = process.env.REACT_APP_CLIENT_ID || ""; // Your client id
     const client_secret = process.env.REACT_APP_CS || ""; // Your secret
     const auth_token = Buffer.from(`${client_id}:${client_secret}`, 'utf-8').toString('base64');
-    console.log("ID", client_id)
     const getAuth = async () => {
         try {
             const token_url = 'https://accounts.spotify.com/api/token';

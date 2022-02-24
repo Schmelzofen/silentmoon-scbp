@@ -2,7 +2,6 @@ import React, { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useHttpClient } from "../hooks/http-hook";
 import jwt_decode from "jwt-decode"
-import { Convert } from 'mongo-image-converter'
 import Resizer from "react-image-file-resizer"
 import placeholder from "../icons/placeholder.png"
 
@@ -25,10 +24,6 @@ export const TokenContentProvider = (props) => {
       setToken(parsedToken);
     }
   }, []);
-
-
-
-
 
   const login = async (data) => {
     try {

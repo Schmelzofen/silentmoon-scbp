@@ -6,7 +6,6 @@ import TokenContent from "../../store/token-provider";
 
 const Welcome = () => {
   const tokenCtx = useContext(TokenContent);
-  console.log(tokenCtx.token);
   return (
     <>
       <div className={classes.container}>
