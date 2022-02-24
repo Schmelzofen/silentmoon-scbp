@@ -19,3 +19,12 @@
 .container div:last-child {
     margin-left: auto;
 }
+
+.uploadImageContainer input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    height: 100px;
+    width: 100px;
+}

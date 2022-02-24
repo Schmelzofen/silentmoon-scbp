@@ -18,7 +18,7 @@ const SignIn = () => {
       <ButtonsDiv firstType="back" firstClick={navigateHandler} />
       <LoginForm />
       <div className={classes.small}>
-        <p>No account yet?</p>
+        <p>NO ACCOUNT YET?</p>
         <LinkButtonStart to="/signup" styleName="small" text="Sign up" />
       </div>
     </div>

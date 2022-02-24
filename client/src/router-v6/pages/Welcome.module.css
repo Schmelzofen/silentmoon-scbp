@@ -1,51 +1,54 @@
 .container {
-  background-color: white;
-  position: relative;
+    background-color: white;
+    position: relative;
+    padding: 0 0 5%;
 }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 1.5rem 0 1rem;
-  color: white;
-  text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1.5rem 0 1rem;
+    color: white;
+    text-align: center;
 }
 
 .container h1 {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-  width: 40%;
-  color: white;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 40%;
+    color: white;
 }
 
 /* start page */
 
 .container h2 {
-  text-align: center;
-  margin-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 .container p {
-  margin-top: 2rem;
-  text-align: center;
+    margin-top: 2rem;
+    text-align: center;
 }
 .container .text {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 .container .small {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container .small p {
-  margin: 0;
+    margin: -1rem 0 0 0;
 }
 
 .container .small a {
-  margin-left: 10px;
+    margin-left: 10px;
+    margin-top: -1rem;
 }
+

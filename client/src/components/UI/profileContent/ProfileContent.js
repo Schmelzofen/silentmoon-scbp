@@ -24,6 +24,7 @@ const ProfileContent = () => {
           "POST",
           JSON.stringify({
             _id: authCtx.token.findUser._id,
+            oldPassword: oldPassword,
             passwort: password,
           }),
           { "Content-Type": "application/json" }

@@ -17,7 +17,6 @@ const spotifyApi = new SpotifyWebApi(credentials)
 async function registrationController(req, res) {
     const db = await connect()
     const user = req.body
-    console.log(req.body)
     const validMail = validator.validate(user.email)
     if (validMail) {
         const findUser = await db.collection('silentmoon').findOne({
@@ -44,6 +43,7 @@ async function registrationController(req, res) {
 async function loginController(req, res) {
     const db = await connect()
     const user = req.body
+    console.log(req.body)
     const token = await spotifyApi
         .clientCredentialsGrant()
         .then(data => {
@@ -73,19 +73,40 @@ async function loginController(req, res) {
 async function changeUserDetailsController(req, res) {
     const db = await connect()
     if (req.body.passwort) {
+        console.log("were going this route")
+        const passwordWhichNeedsToBeCompared = crypto.pbkdf2Sync(req.body.oldPassword, salt, 1000, 64, "sha512").toString("hex")
         const hashPassword = crypto.pbkdf2Sync(req.body.passwort, salt, 1000, 64, "sha512").toString("hex")
-        const getUser = await db.collection("silentmoon").updateOne({ _id: ObjectId(req.body._id) }, { $set: { passwort: hashPassword } })
-            .then(() => {
-                return res.status(200).send({ "Success": "Password has been changed" })
+        const getUser = await db.collection("silentmoon").findOne({ _id: ObjectId(req.body._id) })
+            .then((user) => {
+                console.log("getting the user", user)
+                return user
             })
             .catch((err) => {
                 return res.status(500).send({ "Error": err })
             })
+        if (getUser.passwort === passwordWhichNeedsToBeCompared) {
+            const changeThisPassword = await db.collection("silentmoon").updateOne({ _id: ObjectId(req.body._id) }, { $set: { passwort: hashPassword } })
+                .then(() => {
+                    return res.status(200).send({ "Success": "Password has been changed" })
+                })
+                .catch((err) => {
+                    return res.status(500).send({ "Error": err })
+                })
+        }
     }
     if (req.body.email) {
         const getUser = await db.collection("silentmoon").updateOne({ _id: ObjectId(req.body._id) }, { $set: { email: req.body.email } })
             .then(() => {
                 return res.status(200).send({ "Success": "Email has been changed" })
+            })
+            .catch((err) => {
+                return res.status(500).send({ "Error": err })
+            })
+    }
+    if (req.body.picture) {
+        const getUser = await db.collection("silentmoon").updateOne({ _id: ObjectId(req.body._id) }, { $set: { image: req.body.picture } })
+            .then(() => {
+                return res.status(200).send({ "Success": "Picture has been changed" })
             })
             .catch((err) => {
                 return res.status(500).send({ "Error": err })
