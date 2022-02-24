@@ -5,7 +5,7 @@ import Footer from "../../components/footer/Footer";
 import ProfileContent from "../../components/UI/profileContent/ProfileContent";
 import React from 'react';
 import classes from "./Profile.module.css"
-import TimePicker from "../../components/time/Timepicker";
+
 
 const Profile = () => {
 
@@ -26,7 +26,6 @@ const Profile = () => {
           <button>S</button>
         </div>
         <div className="timePicker">
-          <TimePicker />
         </div>
       </Pcard>
       <Footer />

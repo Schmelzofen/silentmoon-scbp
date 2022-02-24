@@ -18,7 +18,7 @@ import Footer from "../../components/footer/Footer";
 import axios from "axios"
 import MusicContent from "../../store/musicProvider"
 
-const MusicList = ({ code }) => {
+const MusicList = () => {
   const [fetchedMusic, setFetchedMusic] = useState();
   const [modalState, setModalState] = useState(false);
   const [audioData, setAudioData] = useState();
