@@ -14,7 +14,6 @@ const DataLocalStorage = () => {
       let id;
       id = tokenCtx?.token?.user?._id ? tokenCtx?.token?.user?._id : tokenCtx?.token?.findUser?._id
       if (id) {
-        console.log(id)
         try {
           const responseData = await sendRequest(`/api/favorite/${id}`);
           console.log(responseData)
@@ -24,7 +23,6 @@ const DataLocalStorage = () => {
     };
 
     fetchedData();
-    console.log("favorite");
   }, [sendRequest, tokenCtx]);
 
   console.log(fetchedMusic);
@@ -40,7 +38,6 @@ const DataLocalStorage = () => {
   }
 
   if (!error && !isLoading && fetchedMusic.length > 0) {
-    console.log(fetchedMusic.length);
     content = fetchedMusic?.map((list, index) => {
       return (
         <Card
@@ -55,7 +52,6 @@ const DataLocalStorage = () => {
   }
 
   if (!error && !isLoading && fetchedMusic.length === 0) {
-    console.log("no data");
     content = <p>no favorites added</p>;
   }
 
