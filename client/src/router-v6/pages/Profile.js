@@ -62,7 +62,7 @@ const Profile = () => {
             >SU</button>
           </div>
         </div>
-        <div className="timePicker">
+        <div className={classes.timePicker}>
           <LocalizationProvider dateAdapter={AdapterDateFns}>
             <StaticTimePicker
               displayStaticWrapperAs="mobile"
