@@ -4,6 +4,7 @@ import qs from "qs"
 import { Buffer } from 'buffer'
 import { useHttpClient } from "../hooks/http-hook";
 import TokenContent from "./token-provider"
+import env from "react-dotenv"
 
 const MusicContent = React.createContext({
     getAuth: () => { },
@@ -31,10 +32,9 @@ export const MusicContentProvider = (props) => {
     const { isLoading, error, sendRequest } = useHttpClient();
     const tokenCtx = useContext(TokenContent);
 
-    const client_id = window.env.CLIENT_ID || ""; // Your client id
-    const client_secret = window.env.CS || ""; // Your secret
+    const client_id = env.CLIENT_ID || ""; // Your client id
+    const client_secret = env.CS || ""; // Your secret
     const auth_token = Buffer.from(`${client_id}:${client_secret}`, 'utf-8').toString('base64');
-
 
     const getAuth = async () => {
         try {
