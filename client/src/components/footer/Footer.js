@@ -20,7 +20,7 @@ const Footer = () => {
           >
             <div className={classes.iconT}>
               <GiMeditation />
-              <SmallTag text={"Breath"} />
+              <SmallTag text={"Breathe"} />
             </div>
           </NavLink>
         </li>

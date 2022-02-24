@@ -1,24 +1,39 @@
 import TokenContent from "../../../store/token-provider";
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import classes from "./ProfileContent.module.css"
+import { Link } from "react-router-dom"
 
 const ProfileContent = () => {
   const authCtx = useContext(TokenContent);
-  console.log(authCtx)
+  const [isCollapsed, setIsCollapsed] = useState(false)
+  const [istGeschlossen, setzeIstGeschlossen] = useState(false)
+
   return (
     <>
 
       <div className={classes.content}>
-        <h1>Your personal data</h1>
         <ul>
-          <li>Name: {authCtx.token.findUser.name}</li>
           <li>Your Mail: {authCtx.token.findUser.email}</li>
-          <li>Subscription: <span>FREE</span></li>
+          <li>Subscription: <Link className={classes.link} to="/premium"><span className={classes.subscription}>FREE</span></Link></li>
         </ul>
       </div>
       <div className={classes.container}>
-        <button>change Password</button>
-        <button>change Mail</button>
+        <button onClick={() => setIsCollapsed(!isCollapsed)}>change password</button>
+        <button onClick={() => setzeIstGeschlossen(!istGeschlossen)}>change mail</button>
+        {isCollapsed ?
+          <div className={classes.inputContainer}>
+            <input type="password" name="oldpw" placeholder="old password" />
+            <input type="password" name="newpw" placeholder="new password" />
+            <button>save</button>
+          </div> :
+          null}
+        {istGeschlossen ?
+          <div className={classes.inputContainer}>
+            <input type="text" name="oldmail" placeholder="Your old email" />
+            <input type="text" name="newmail" placeholder="Your new email" />
+            <button>save</button>
+          </div> :
+          null}
       </div>
     </>
   );

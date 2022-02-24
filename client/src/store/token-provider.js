@@ -28,7 +28,7 @@ export const TokenContentProvider = (props) => {
   const login = async (data) => {
     try {
       const responseData = await sendRequest(
-        "/auth/login",
+        "http://localhost:3000/auth/login",
         "POST",
         JSON.stringify({
           email: data.email,

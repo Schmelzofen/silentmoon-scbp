@@ -1,8 +1,10 @@
 .container {
     text-align: center;
+    margin: 0 0 10% 0;
 }
 
-.container > button {
+.container > button,
+.inputContainer button {
     background: #e28f83;
     color: white;
     border: none;
@@ -11,11 +13,57 @@
     margin-left: 5px;
 }
 
+.container > button:active,
+.inputContainer button:active {
+    background: white;
+    color: #e28f83;
+    border: 1px solid #e28f83;
+    transform: scale(0.9);
+}
+
 .content ul {
     list-style-type: none;
     margin-left: -25px;
 }
 
 .content ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content ul li:nth-of-type(2) {
+    margin-bottom: 13%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer input {
+    border: 1px solid #e28f83;
+    text-indent: 10px;
+}
+
+.inputContainer input,
+.inputContainer button {
+    margin: 4% 10% 0;
+    padding: 1% 0;
+    border-radius: 5px;
+}
+
+.inputContainer button {
+    border: 1px solid #e28f83;
+    background: #e28f83;
+    color: white;
+}
+
+.subscription {
+    color: white;
+    background: #e28f83;
+    padding: 1.5%;
+    border-radius: 5px;
+}
+
+.link {
+    text-decoration: none;
 }
