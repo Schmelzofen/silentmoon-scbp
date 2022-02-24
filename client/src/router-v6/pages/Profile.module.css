@@ -1,6 +1,6 @@
 .container button {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     margin-left: 5px;
     border: none;
@@ -10,7 +10,7 @@
 
 .container {
     text-align: center;
-    margin: 1% 0 0 0;
+    margin: 2% 0;
 }
 
 .container button:active,
@@ -26,7 +26,7 @@
 }
 
 .meditate h1 {
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 
 .timePicker {
@@ -41,4 +41,5 @@
     border-radius: 5px;
     color: white;
     margin: 4% 0 0 0;
+    font-size: 2.5vh;
 }

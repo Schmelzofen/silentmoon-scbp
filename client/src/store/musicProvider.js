@@ -126,7 +126,7 @@ export const MusicContentProvider = (props) => {
                     Authorization: `Bearer ${code}`
                 },
                 params: {
-                    q: "workout",
+                    q: "workout instrumental",
                     type: "playlist"
                 }
             })
@@ -138,7 +138,7 @@ export const MusicContentProvider = (props) => {
                     Authorization: `Bearer ${code}`
                 },
                 params: {
-                    q: "sleep",
+                    q: "sleep instrumental",
                     type: "playlist"
                 }
             })
@@ -150,7 +150,7 @@ export const MusicContentProvider = (props) => {
                     Authorization: `Bearer ${code}`
                 },
                 params: {
-                    q: "read",
+                    q: "read instrumental",
                     type: "playlist"
                 }
             })
