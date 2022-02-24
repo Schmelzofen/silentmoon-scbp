@@ -58,7 +58,7 @@ export const TokenContentProvider = (props) => {
       try {
         const resized = Resizer.imageFileResizer(data.picture[0], 200, 200, "JPEG", 100, 0, async (uri) => {
           const responseData = await sendRequest(
-            "http://localhost:3000/auth/registration",
+            "/auth/registration",
             "POST",
             JSON.stringify({
               email: data.email,
@@ -82,7 +82,7 @@ export const TokenContentProvider = (props) => {
     } else if (data.picture.length === 0) {
       try {
         const responseData = await sendRequest(
-          "http://localhost:3000/auth/registration",
+          "/auth/registration",
           "POST",
           JSON.stringify({
             email: data.email,
