@@ -51,11 +51,6 @@ const ProfileContent = () => {
           { "Content-Type": "application/json" }
         );
         if (responseData && !error) {
-          console.log(responseData)
-          let oldmail = JSON.parse(localStorage.token)
-          oldmail.findUser.email = mail
-          localStorage.setItem("token", JSON.stringify(oldmail))
-          console.log(JSON.stringify(localStorage))
           window.location.relaod()
         }
       } catch (e) {
