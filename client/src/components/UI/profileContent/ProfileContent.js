@@ -12,6 +12,7 @@ const ProfileContent = () => {
   const { isLoading, error, sendRequest } = useHttpClient();
   const [mail, setMail] = useState("")
   const [password, setPassword] = useState("")
+  const [oldPassword, setOldPassword] = useState("")
   const navigate = useNavigate();
 
 
@@ -76,8 +77,8 @@ const ProfileContent = () => {
         <button onClick={() => setzeIstGeschlossen(!istGeschlossen)}>change mail</button>
         {isCollapsed ?
           <div className={classes.inputContainer}>
-            <input type="password" name="oldpw" readOnly placeholder="old password" value={authCtx.token.findUser.passwort} />
-            <input type="password" name="newpw" placeholder="new password" onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" name="oldpw" placeholder="enter old password" onChange={(e) => setOldPassword(e.target.value)} />
+            <input type="password" name="newpw" placeholder="enter new password" onChange={(e) => setPassword(e.target.value)} />
             <button onClick={triggerPasswordChange}>save</button>
           </div> :
           null}
