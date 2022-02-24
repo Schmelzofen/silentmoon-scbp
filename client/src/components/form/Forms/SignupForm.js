@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import TokenContent from "../../../store/token-provider";
 import classes from "./LoginForm.module.css";
 
 const SignupForm = () => {
   const authCtx = useContext(TokenContent);
-
+  const [file, setFile] = useState(false)
   const {
     register,
     handleSubmit,
@@ -53,10 +53,20 @@ const SignupForm = () => {
         {errors.passwort?.message && (
           <p className={classes.error}>{errors.passwort?.message}</p>
         )}
-        <input
-          /*ref={register}*/ {...register("picture")}
-          type="file" /*name="picture"*/
-        />
+        {file ?
+          <label class="btn btn-default btn-sm center-block btn-file">
+            Picture has been uploaded!
+          </label>
+          :
+          <label class="btn btn-default btn-sm center-block btn-file">
+            <p><i class="fa fa-upload fa-2x" aria-hidden="true"></i> choose a picture</p>
+            <input
+                /*ref={register}*/ {...register("picture")}
+              type="file" /*name="picture"*/
+              onChange={() => setFile(!file)}
+            />
+          </label>
+        }
         <input type="submit" value="SEND" />
       </form>
     </>

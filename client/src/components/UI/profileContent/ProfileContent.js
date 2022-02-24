@@ -54,8 +54,7 @@ const ProfileContent = () => {
           oldmail.findUser.email = mail
           localStorage.setItem("token", JSON.stringify(oldmail))
           console.log(JSON.stringify(localStorage))
-          setIsCollapsed(!istGeschlossen)
-          navigate("/profile")
+          window.location.relaod()
         }
       } catch (e) {
         console.log(e)

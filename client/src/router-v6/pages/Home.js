@@ -17,36 +17,10 @@ const Home = () => {
   const tokenCtx = useContext(TokenContent);
   const music = useContext(MusicContent)
 
-  let favoriteListContent;
   let swiperFavContent;
   let swiperMediContent;
   let swiperYogaContent;
 
-
-
-  if (!music.favorites) {
-    favoriteListContent = <p>You dont have any favorites</p>;
-  } else {
-    favoriteListContent = music.favorites?.map((list, index) => {
-      console.log(list.src);
-      return (
-        <SwiperSlide key={index} tag="li">
-          <Card
-            to={list.id}
-            /* src={list.images[0]?.url} */
-            src={list.src}
-            name={list?.name}
-          />
-        </SwiperSlide>
-      );
-    });
-
-    swiperFavContent = (
-      <MoveList spaceBetween={20} slidesPerView={2}>
-        {favoriteListContent}
-      </MoveList>
-    );
-  }
 
   swiperYogaContent = (
     <MoveList spaceBetween={150} slidesPerView={3}>
