@@ -20,7 +20,7 @@ const ProfileContent = () => {
     const changeDetails = async () => {
       try {
         const responseData = await sendRequest(
-          "http://localhost:3000/auth/profile",
+          "/auth/profile",
           "POST",
           JSON.stringify({
             _id: authCtx.token.findUser._id,
@@ -41,7 +41,7 @@ const ProfileContent = () => {
     const changeDetails = async () => {
       try {
         const responseData = await sendRequest(
-          "http://localhost:3000/auth/profile",
+          "/auth/profile",
           "POST",
           JSON.stringify({
             _id: authCtx.token.findUser._id,
