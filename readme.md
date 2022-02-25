@@ -1,4 +1,6 @@
-# Silent Moon – the music app for yoga and meditation
+# Silent Moon – the App for Yoga and Meditation
+
+<br>
 
 ## Idea
 
@@ -16,16 +18,19 @@ The app was realized with
 - MERN stack (MongoDB, Express, React, NodeJS)
 - Spotify API.
 
-Because Spotify itself requires a login, the Spotify data is not freely accessible (and a push to Heroku, for example, is not possible). The data is therefore fed from the local storage. This would not be functional in reality.
 
-### Some screenshots of the app's user interface
+## Link to App
+
+here: [SilentMoon](https://silentmoonproject.herokuapp.com/) – The App for Yoga and Meditation.
+
+
+## Screenshots of the app's user interface
 
 <div align="center">
-    <img src="./screenshots/login.jpeg" width="220" />
-    <img src="./screenshots/signUp.jpeg" width="220" />
-    <img src="./screenshots/reminders.jpeg" width="220" />
-    <img src="./screenshots/home.jpeg" width="220" />
-    <img src="./screenshots/meditationDetails.jpeg" width="220" />
+    <img src="./screenshots/login.jpg" width="220" />
+    <img src="./screenshots/reminders.jpg" width="220" />
+    <img src="./screenshots/home.jpg" width="220" />
+    <img src="./screenshots/meditationDetails.jpg" width="220" />
 </div>
 
 
@@ -38,3 +43,4 @@ Because Spotify itself requires a login, the Spotify data is not freely accessib
 :flamingo: [Julia Rinzilotti](https://github.com/JuliaRinzilotti) <br />
 
 :parrot: [Lukas Schornstein](https://github.com/lukechimney) <br />
+
