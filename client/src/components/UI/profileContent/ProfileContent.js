@@ -51,7 +51,7 @@ const ProfileContent = () => {
           { "Content-Type": "application/json" }
         );
         if (responseData && !error) {
-          window.location.relaod()
+          window.location.reload()
         }
       } catch (e) {
         console.log(e)
