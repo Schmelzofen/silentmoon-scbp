@@ -27,10 +27,10 @@ here: [SilentMoon](https://silentmoonproject.herokuapp.com/) – The App for Yog
 ## Screenshots of the app's user interface
 
 <div align="center">
-    <img src="./screenshots/login.jpg" width="220" />
-    <img src="./screenshots/reminders.jpg" width="220" />
-    <img src="./screenshots/home.jpg" width="220" />
-    <img src="./screenshots/meditationDetails.jpg" width="220" />
+    <img src="./screenshots/login.jpeg" width="220" />
+    <img src="./screenshots/reminders.jpeg" width="220" />
+    <img src="./screenshots/home.jpeg" width="220" />
+    <img src="./screenshots/meditationDetails.jpeg" width="220" />
 </div>
 
 
