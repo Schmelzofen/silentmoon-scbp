@@ -10,6 +10,7 @@ const ProfilePic = (props) => {
   const tokenCtx = useContext(TokenContent);
   const { isLoading, error, sendRequest } = useHttpClient();
   const [newPic, setNewPic] = useState(tokenCtx.token.findUser.image)
+
   useEffect(() => {
     const changeDetails = async () => {
       try {
@@ -40,7 +41,7 @@ const ProfilePic = (props) => {
       <div className={classes.uploadImageContainer}>
         <label htmlFor="picture" className="btn btn-default btn-sm center-block btn-file">
           <img
-            src={`${newPic ? newPic : tokenCtx?.token?.findUser?.image}`}
+            src={`${tokenCtx?.token?.findUser?.image ? tokenCtx?.token?.findUser?.image : newPic}`}
             alt="face"
           />
           <input type="file" name="picture" onChange={(e) => {
