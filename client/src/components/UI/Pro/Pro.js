@@ -8,7 +8,7 @@ const Premium = () => {
     <>
       <Logo />
       <Pcard>
-        <h1>Premium Version</h1>
+        <h1 className={classes.heading}>Premium Version</h1>
         <div className={classes.buyCont}>
           <a
             href="https://www.youtube.com/watch?v=_bSEfx6D8mA"
@@ -19,8 +19,8 @@ const Premium = () => {
             BUY PREMIUM
           </a>
 
-          <h2> Only $9.99 per Month - Cancel anytime.</h2>
-          <p>
+          <h2 className={classes.heading}> Only $9.99 per Month - Cancel anytime.</h2>
+          <p className={classes.heading}>
             <span>Terms and conditions apply.</span> 1 month free, not available
             for users who have already tried Premium.
           </p>
@@ -47,7 +47,7 @@ const Premium = () => {
           </li>
           <li>
             <AiOutlineCheck />
-            <p>Listen to music even when the app is running in the background</p>
+            <p className={classes.lastP}>Listen to music even when the app is running in the background</p>
           </li>
         </ul>
       </Pcard>

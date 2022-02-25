@@ -1,61 +1,69 @@
 .ul {
-  padding: 0;
-  margin: 5rem 0 0 0;
-  list-style-type: none;
+    padding: 0;
+    margin: 5rem 0 0 0;
+    list-style-type: none;
 }
 
 .ul li:first-child {
-  text-align: center;
+    text-align: center;
 }
 
 .ul li:not(:first-child) {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .ul li svg {
-  color: rgb(23 104 43);
-  width: 40px;
-  height: 25px;
+    color: #7682bf;
+    width: 40px;
+    height: 25px;
 }
 .buyCont {
-  position: relative;
+    position: relative;
 }
 
 .buyCont a {
-  display: block;
-  width: 90%;
-  margin: 2rem auto 0 auto;
-  text-align: center;
-  padding: 1rem 0;
-  -webkit-box-shadow: 5px 5px 11px 5px #e5e5e5;
-  box-shadow: 5px 5px 11px 5px #e5e5e5;
-  text-decoration: none;
-  border-radius: 20px;
-  color: rgba(0, 0, 0, 0.966);
-  font-weight: 700;
-  position: absolute;
-  left: 0;
-  right: 0;
-  /* transform: translate(50%); */
+    display: block;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+    -webkit-box-shadow: 5px 5px 11px 5px #e5e5e5;
+    box-shadow: 5px 5px 11px 5px #e5e5e5;
+    text-decoration: none;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.966);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* transform: translate(50%); */
 }
 
 .buyCont a:active {
-  width: 80%;
-  padding: 0.9rem 0;
+    width: 80%;
+    padding: 0.9rem 0;
 }
 
 .buyCont h2 {
-  font-size: 1.2rem;
-  padding-top: 7rem;
-  margin-bottom: 0;
+    font-size: 1.2rem;
+    padding-top: 7rem;
+    margin-bottom: 0;
 }
 
 .buyCont p span {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .buyCont p {
-  margin-top: 0;
-  color: #7682bf;
+    margin-top: 0;
+    color: #7682bf;
+}
+
+.heading {
+    text-align: center;
+}
+
+.lastP {
+    margin-left: 10px;
 }

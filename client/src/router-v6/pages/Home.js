@@ -63,11 +63,11 @@ const Home = () => {
             <h2>{`Hello ${tokenCtx?.token?.user?.name ? tokenCtx?.token?.user?.name : tokenCtx?.token?.findUser?.name}`}</h2>
             <p className={classes.par}>We hope you have a good day!</p>
             <div className={classes.recommented}>
-              <h3>Recomended Yoga for you</h3>
+              <h3>Recommended Yoga for you</h3>
               {swiperYogaContent}
             </div>
             <div className={` ${classes.last}`}>
-              <h3>Recomended Meditation for you</h3>
+              <h3>Recommended Meditation for you</h3>
               {swiperMediContent}
             </div>
           </>
