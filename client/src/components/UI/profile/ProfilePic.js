@@ -15,7 +15,7 @@ const ProfilePic = (props) => {
       try {
         Resizer.imageFileResizer(file, 200, 200, "JPEG", 100, 0, async (uri) => {
           const responseData = await sendRequest(
-            "http://localhost:3000/auth/profile",
+            "/auth/profile",
             "POST",
             JSON.stringify({
               _id: tokenCtx.token.findUser._id,
@@ -24,7 +24,10 @@ const ProfilePic = (props) => {
             { "Content-Type": "application/json" }
           );
           if (responseData && !error) {
-            setNewPic(uri)
+            console.log(tokenCtx.token.findUser.image)
+            tokenCtx.token.findUser.image = uri
+            console.log(uri)
+            window.location.reload()
           }
         }, "base64", 200, 200)
       } catch (e) {

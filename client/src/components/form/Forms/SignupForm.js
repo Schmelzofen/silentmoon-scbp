@@ -18,8 +18,7 @@ const SignupForm = () => {
     <>
       <form
         onSubmit={handleSubmit((data) => {
-
-          console.log("LOOK HERE", file, data)
+          console.log(file)
           console.log(data.picture);
           console.log(data.picture.length)
           authCtx.signup(data, file);
@@ -55,17 +54,20 @@ const SignupForm = () => {
         {errors.passwort?.message && (
           <p className={classes.error}>{errors.passwort?.message}</p>
         )}
-        <div className={classes.uploadPicture}>
-          <label className="btn btn-default btn-sm center-block btn-file">
-            <p><i className="fa fa-upload fa-2x" aria-hidden="true">{file ? <span className={classes.upload}>{file}</span> : <span className={classes.upload}>Upload a picture!</span>}</i></p>
+        {file ?
+          <label class="btn btn-default btn-sm center-block btn-file">
+            Picture has been uploaded!
+          </label>
+          :
+          <label class="btn btn-default btn-sm center-block btn-file">
+            <p><i class="fa fa-upload fa-2x" aria-hidden="true">{file ? <span className={classes.upload}>{file}</span> : <span className={classes.upload}>Upload a picture!</span>}</i> </p>
             <input
                 /*ref={register}*/ {...register("picture")}
               type="file" /*name="picture"*/
-              onChange={(e) => setFile(e.target.files[0].name)}
-              accept="image/png, image/gif, image/jpeg"
+              onChange={(e) => setFile(e.target)}
             />
           </label>
-        </div>
+        }
         <input type="submit" value="SEND" />
       </form>
     </>
