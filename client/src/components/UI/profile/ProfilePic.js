@@ -10,13 +10,12 @@ const ProfilePic = (props) => {
   const tokenCtx = useContext(TokenContent);
   const { isLoading, error, sendRequest } = useHttpClient();
   const [newPic, setNewPic] = useState(tokenCtx.token.findUser.image)
-
   useEffect(() => {
     const changeDetails = async () => {
       try {
         Resizer.imageFileResizer(file, 200, 200, "JPEG", 100, 0, async (uri) => {
           const responseData = await sendRequest(
-            "/auth/profile",
+            "http://localhost:3000/auth/profile",
             "POST",
             JSON.stringify({
               _id: tokenCtx.token.findUser._id,
@@ -41,7 +40,7 @@ const ProfilePic = (props) => {
       <div className={classes.uploadImageContainer}>
         <label htmlFor="picture" className="btn btn-default btn-sm center-block btn-file">
           <img
-            src={`${tokenCtx?.token?.findUser?.image ? tokenCtx?.token?.findUser?.image : newPic}`}
+            src={`${newPic ? newPic : tokenCtx?.token?.findUser?.image}`}
             alt="face"
           />
           <input type="file" name="picture" onChange={(e) => {

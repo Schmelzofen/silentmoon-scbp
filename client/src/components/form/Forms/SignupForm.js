@@ -18,9 +18,11 @@ const SignupForm = () => {
     <>
       <form
         onSubmit={handleSubmit((data) => {
+
+          console.log("LOOK HERE", file, data)
           console.log(data.picture);
           console.log(data.picture.length)
-          authCtx.signup(data);
+          authCtx.signup(data, file);
           //   if(errors.)
         })}
         className={classes.form}

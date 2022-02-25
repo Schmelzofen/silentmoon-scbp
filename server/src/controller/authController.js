@@ -17,6 +17,7 @@ const spotifyApi = new SpotifyWebApi(credentials)
 async function registrationController(req, res) {
     const db = await connect()
     const user = req.body
+    console.log(req.body)
     const validMail = validator.validate(user.email)
     if (validMail) {
         const findUser = await db.collection('silentmoon').findOne({

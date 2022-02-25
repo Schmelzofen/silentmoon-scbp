@@ -52,10 +52,13 @@ export const TokenContentProvider = (props) => {
     localStorage.removeItem("token");
     navigate("/")
   };
-  const signup = async (data) => {
-    if (data.picture.length === 1) {
+  const signup = async (data, file) => {
+    console.log("SIGNUP", file)
+    if (file) {
       try {
-        const resized = Resizer.imageFileResizer(data.picture[0], 200, 200, "JPEG", 100, 0, async (uri) => {
+        console.log(file)
+        console.log("User uploaded a custom picture")
+        const resized = Resizer.imageFileResizer(file, 200, 200, "JPEG", 100, 0, async (uri) => {
           const responseData = await sendRequest(
             "/auth/registration",
             "POST",
@@ -69,6 +72,7 @@ export const TokenContentProvider = (props) => {
             { "Content-Type": "application/json" }
           );
           if (responseData && responseData.accessToken && !error) {
+            console.log(responseData)
             const encodedToken = jwt_decode(responseData.accessToken)
             setToken(encodedToken);
             localStorage.setItem("token", JSON.stringify(encodedToken))
@@ -78,8 +82,9 @@ export const TokenContentProvider = (props) => {
       } catch (e) {
         console.log(e)
       }
-    } else if (data.picture.length === 0) {
+    } else if (!file) {
       try {
+        console.log("no custom picture")
         const responseData = await sendRequest(
           "/auth/registration",
           "POST",
